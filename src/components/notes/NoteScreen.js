@@ -29,7 +29,7 @@ export const NoteScreen = () => {
                 <div className="notes__content">
                     <input
                         type="text"
-                        placeholder="Some awesome title"
+                        placeholder="Escriba el titulo"
                         className="note__title-input"
                         autoComplete="off"
                         name="title"
@@ -37,7 +37,7 @@ export const NoteScreen = () => {
                         onChange={handleInputChange}
                     />
                     <textarea
-                        placeholder="What happened today"
+                        placeholder="¿que hiciste hoy?"
                         className="note__textarea"
                         name="body"
                         value={body}
@@ -54,7 +54,7 @@ export const NoteScreen = () => {
                         </div>)}
                 </div>
                 <button className="btn btn-danger"
-                        onClick={handleDelete}>Delete</button>
+                        onClick={handleDelete}>Borrar</button>
         </div>
     )
 }

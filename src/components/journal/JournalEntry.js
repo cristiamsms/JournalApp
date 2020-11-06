@@ -2,7 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import { useDispatch } from 'react-redux';
 import { activeNote } from '../../actions/notes';
-
+import 'moment/locale/es';
+moment.locale('es');
 export const JournalEntry = ({id,date,title,body,url}) => {
     const noteDate =moment(date);
     const dispatch = useDispatch();
